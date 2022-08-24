@@ -1,0 +1,36 @@
+{
+  "name": "@foreground/canvas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.node.js",
+  "browser": "dist/index.browser.js",
+  "types": "dist/index.browser.d.ts",
+  "files": [
+    "src/**/*",
+    "dist/**/*",
+    "lib/**/*"
+  ],
+  "keywords": [
+    "canvas",
+    "image",
+    "node",
+    "browser",
+    "polyfill",
+    "isomorphic"
+  ],
+  "scripts": {
+    "build": "npm run clean && tsc -p ./tsconfig.node.json && tsc -p ./tsconfig.json",
+    "clean": "rimraf lib/ && rimraf dist/",
+    "prepare": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "16.10.3",
+    "rimraf": "3.0.2",
+    "typescript": "4.7.4"
+  },
+  "dependencies": {
+    "canvas": "2.9.3"
+  }
+}
