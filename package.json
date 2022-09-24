@@ -1,12 +1,18 @@
 {
   "name": "@foreground/canvas",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A portable canvas implementation.",
   "main": "lib/index.node.js",
   "browser": "dist/index.browser.js",
   "types": "dist/index.browser.d.ts",
   "files": [
-    "src/**/*"
+    "src/**/*",
+    "lib/**/*",
+    "dist/**/*",
+    "package-lock.json",
+    "package.json",
+    "tsconfig.json",
+    "tsconfig.node.json"
   ],
   "keywords": [
     "canvas",
